@@ -46,7 +46,7 @@ function _s_setup() {
 
 	$GLOBALS['content_width'] = $theme_config->get( 'content_width' );
 
-	foreach ( array_filter( $theme_config->get('theme_support', array() ) ) as $feature => $options ) {
+	foreach ( $theme_config->get('theme_support', array() ) as $feature => $options ) {
 		if ( $options === false ) {
 			remove_theme_support( $feature );
 		}
