@@ -23,11 +23,12 @@
 	<file>.</file>
 
 	<!-- Include the WordPress ruleset, with exclusions. -->
-	<rule ref="WordPress">
+	<rule ref="WordPress-Core">
 		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
 		<exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
 	</rule>
+	<rule ref="WordPress-Docs" />
 
 	<!-- Verify that the text_domain is set to the desired text-domain.
 		 Multiple valid text domains can be provided as a comma-delimited list. -->
